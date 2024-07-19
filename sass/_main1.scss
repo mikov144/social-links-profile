@@ -1,0 +1,107 @@
+.main {
+  position: relative;
+  background-color: #141414;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    max-width: 384px;
+    background-color: #1F1F1F;
+    border-radius: 12px;
+
+    @media screen and (max-width: 390px) {
+      max-width: 327px;
+    }
+
+    .about__img {
+      margin: 24px 0;
+      max-width: 336px;
+      height: auto;
+      border-radius: 10px;
+
+      @media screen and (max-width: 390px) {
+        max-width: 280px;
+      }    
+    }
+
+    .description {
+      width: 87%;
+
+      &__category {
+        display: inline;
+        padding: 4px 12px;
+        border-radius: 4px;
+        background-color: #F4D04E;
+        font-size: clamp(12px, 0.73vw, 14px);
+        font-weight: 800;
+        line-height: clamp(18px, 1.1vw, 21px);
+      }
+
+      &__date {
+        margin: 12px 0;
+        font-size: clamp(12px, 0.73vw, 14px);
+        line-height: clamp(18px, 1.1vw, 21px);
+      }
+
+      &__title {
+        margin-bottom: 12px;
+        font-size: clamp(20px, 1.25vw, 24px);
+        font-weight: 800;
+        line-height: clamp(30px, 1.87vw, 36px);
+        cursor: pointer;
+
+        &:hover {
+          color: #F4D04E;
+
+          @media screen and (max-width: 390px) {
+            display: none;
+          }
+        }
+      }
+
+      &__text {
+        margin-bottom: 24px;
+        font-size: clamp(14px, 0.83vw, 16px);
+        line-height: clamp(21px, 1.25vw, 24px);
+      }
+      &__author {
+        display: flex;
+        width: 38%;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 24px;
+
+        @media screen and (max-width: 390px) {
+          width: 46%;
+        } 
+
+        &-img {
+          max-width: 32px;
+        }
+
+        &-name {
+          font-size: 14px;
+          font-weight: 800;
+          line-height: 21px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .footer {
+    position: absolute;
+    bottom: 5px;
+    font-size: 11px;
+
+    & span {
+      color: #C4F82A;
+    }
+  }
+}

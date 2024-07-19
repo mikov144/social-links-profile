@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.5s;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  font-family: "Inter";
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #141414;
+  height: 100vh;
+}
+.main .container {
+  padding: 40px;
+  width: 20%;
+  background-color: #1F1F1F;
+  border-radius: 12px;
+}
+.main .container .about {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.main .container .about .about__title {
+  margin: 26px 0 4px;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 600;
+}
+.main .container .about .about__description {
+  margin-bottom: 24px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #C4F82A;
+}
+.main .container .about .about__bio {
+  margin-bottom: 24px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+.main .container .navigation {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 16px 0;
+}
+.main .container .navigation .navigation__item {
+  padding: 12px 0;
+  background-color: #333333;
+  font-size: 14px;
+  line-height: 21px;
+  min-width: 300px;
+  border-radius: 8px;
+  transition: 0.5s;
+}
+.main .container .navigation .navigation__item:hover {
+  background-color: #C4F82A;
+  cursor: pointer;
+}
+.main .container .navigation .navigation__item:hover > a {
+  color: #333333;
+}
+.main .footer {
+  position: absolute;
+  bottom: 10px;
+  font-size: 11px;
+}
+.main .footer span {
+  color: #C4F82A;
+}
+.main .footer span:hover {
+  color: #698515;
+}/*# sourceMappingURL=style.css.map */
