@@ -46,8 +46,16 @@ table {
 	border-spacing: 0;
 }
 
+body {
+  font-family: $font-family;
+  color: $color-white;
+}
+
 a {
 	text-decoration: none;
-	color: #ffffff;
-	transition: 0.5s;
+	color: $color-white;
+
+	&:hover {
+		color: $color-grey-700;
+	}
 }
